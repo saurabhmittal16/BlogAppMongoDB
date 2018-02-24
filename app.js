@@ -7,8 +7,8 @@ var bodyParser          = require('body-parser'),
 
 var port = process.env.PORT || 4000;
 // APP CONFIG
-mongoose.connect("mongodb://localhost/BlogApp"); //Creating a new DB 
-// mongoose.connect("mongodb://sm:sm@ds247678.mlab.com:47678/my-blog-app"); //Creating a new DB
+// mongoose.connect("mongodb://localhost/BlogApp"); //Creating a new DB 
+mongoose.connect("mongodb://sm:sm@ds247678.mlab.com:47678/my-blog-app"); //Creating a new DB
 
 
 app.use(express.static("public"));
